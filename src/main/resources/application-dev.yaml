@@ -1,0 +1,24 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  docker:
+    compose:
+      lifecycle-management: start_only
+  web:
+    error:
+      include-message: always
+      include-binding-errors: always
+
+logging:
+  level:
+    com.github.azadan.minimalisturl: DEBUG
+    org.springframework.security: DEBUG
+    org.hibernate.orm.jdbc.bind: TRACE
+
+app:
+  base-url: http://localhost:8080

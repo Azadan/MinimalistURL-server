@@ -1,7 +1,3 @@
 spring:
   application:
     name: minimalisturl
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
